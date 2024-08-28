@@ -4,3 +4,35 @@
 body {
     font-family: "Mulish", sans-serif;
 }
+.orange-color{
+    color: #FF5400;
+}
+
+/* header section styles */
+header{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-name{
+    display: flex;
+}
+.nav-title{
+    font-size: 36px;
+    font-weight: 800;
+    padding-left: 15px;
+    color: #131318;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #424247;
+}
