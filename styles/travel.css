@@ -7,10 +7,20 @@ body {
 .orange-color{
     color: #FF5400;
 }
+.input-fields .primary-btn{
+    color: #FFFFFF;
+    background-color: #FF5400;
+    height: 60px;
+    width: 180px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
 
 /* header section styles */
 header{
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 nav{
@@ -20,11 +30,15 @@ nav{
 }
 .navbar-name{
     display: flex;
+    gap: 20px;
+}
+.navbar-name img{
+    height: 5%;
+    margin-top: 35px;
 }
 .nav-title{
     font-size: 36px;
     font-weight: 800;
-    padding-left: 15px;
     color: #131318;
 }
 nav ul{
@@ -34,5 +48,92 @@ nav ul li{
     list-style: none;
     margin-right: 30px;
     font-size: 18px;
+    font-weight: 600;
     color: #424247;
+}
+.menu{
+    display: none;  /* copied */
+}
+
+
+/* banner styles */
+.banner{
+    text-align: center;
+    background-image:  linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(../Images/Group\ 13\ \(1\)\ \(1\).png);  /* copied */
+    /* background-image:  linear-gradient(180deg, #131318, #13131800), url(../Images/Group\ 13\ \(1\)\ \(1\).png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: scroll; */
+    /* background-attachment: fixed; */
+    width: 100%;
+    height: 500px;
+    padding-top: 50px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 800;
+    color: #FFFFFF;
+}
+.banner-describe{
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    width: 70%;
+    padding-left: 200px;
+}
+.input-fields{
+    background-color: #ffffff4b;
+    border-radius: 8px;
+    padding: 15px;
+    max-width: 900px;
+    padding-left: 30px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.input-fields input{
+    margin-right: 15px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width:600px) {
+    nav{
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+         /* copied */
+        padding-left: 10px;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: grid;
+        padding-right: 30px;
+        /* copied */
+    }
+    .banner{
+        width: 100%;
+        height: auto;
+        background-position: center; /* copied */
+    }
+    .banner-title{
+        font-size: 28px;
+    }
+    .banner-describe{
+        padding-left: 50px;
+        text-align: center;
+    }
+    .input-fields{
+        margin: 20px;
+        gap: 20px;
+    }
+    .input-fields input{
+        margin-bottom: 20px;
+    }
 }
