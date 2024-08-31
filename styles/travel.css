@@ -10,7 +10,7 @@ body {
 .primary-btn{
     color: #FFFFFF;
     background-color: #FF5400;
-    height: 60px;
+    height: 50px;
     width: 180px;
     border: 0;
     border-radius: 10px;
@@ -22,6 +22,11 @@ body {
     font-size: 16px;
     font-weight: 500;
     color: #131318a9;
+}
+
+.text-gray{
+  color: #5A5A5D;
+  font-size: 16px;
 }
 
 /* header section styles */
@@ -191,10 +196,6 @@ main{
     font-weight: 800;
     color: #131318;
   }
-  .text-gray{
-    color: #5A5A5D;
-    font-size: 16px;
-  }
 
   /* deals and discounts styles */
   .deals-section>.text-gray{
@@ -243,6 +244,8 @@ main{
   .hotel-container2{
     background-color: #ffffffc9;
     border: 1px solid #FFFFFF;
+    backdrop-filter: blur(2.5px);
+    /* copied */
     border-radius: 10px;
     padding: 30px;
     width: 500px;
@@ -269,6 +272,31 @@ main{
     top: 20px;
   }
 
+  /* bangladesh section styles */
+  .bangladesh-section{
+    display: flex;
+    margin-top: 100px;
+    gap: 20px;
+  }
+  .bangladesh-section li{
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .mountain-img{
+    position: relative;
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* copied from online */
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+  }
 
   /* responsive styles */
 @media screen and (max-width:600px) {
@@ -306,10 +334,10 @@ main{
     .head-input-fields input{
         margin-bottom: 20px;
     }
-    .popular-tours{
+    .popular-tours, .bangladesh-section{
         flex-direction: column;
     }
-    .tours-img img{
+    .tours-img img, .mountain-img img{
         width: 100%;
     }
     .destiny-title{
@@ -342,6 +370,7 @@ main{
         height: 500px;
         margin-left: 20px;
         margin-top: 20px;
+        backdrop-filter: none;
     }
     .package-btn .primary-btn{
         left: 100px;
