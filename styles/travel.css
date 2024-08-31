@@ -3,6 +3,7 @@
 /* common shared styles */
 body {
     font-family: "Mulish", sans-serif;
+    margin: 0;
 }
 .orange-color{
     color: #FF5400;
@@ -298,6 +299,99 @@ main{
     text-align: center;
   }
 
+  /* newsletter section styles */
+  .newsletter-container{
+    display: flex;
+    margin-top: 100px;
+    gap: 50px;
+  }
+  .newsletter-content{
+    border: 2px solid #FF5400;
+    border-radius: 20px;
+    padding: 20px;
+    height: 380px;
+  }
+  .newsletter-content p{
+    border-bottom: 1px solid #1313182c;
+    padding-bottom: 20px;
+  }
+  .newsletter-content input{
+    width: 80%;
+    background: #13131810;
+    border-radius: 8px;
+    border: 0;
+    padding: 15px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+  }
+  .newsletter-content .primary-btn{
+    width: 93%;
+  }
+  .newsletter-tag{
+    background-image: url(../Images/Rectangle\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    padding: 10px;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+  }
+  .discount-tag{
+    color: #FFFFFF;
+    background-color: #FF5400;
+    padding: 10px;
+    border-radius: 20px;
+    width: 300px;
+    height: 150px;
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    margin: 0 auto;
+    background: #FF5400;
+    transform: rotate(-22.628deg);
+  }
+  .discount-tag p{
+    font-size: 24px;
+    font-weight: 300;
+  }
+  .discount-tag{
+    font-size: 32px;
+    font-weight: 800;
+    }
+
+    /* footer styles */
+    footer{
+      text-align: center;
+      background-color: #1313180e;
+      padding: 50px;
+    }
+    .footer-name{     
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    }
+    .footer-name img{
+      height: 5%;
+      margin-top: 35px;
+    }
+    .social-icons{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .copyright{
+      color: #131318;
+      border-top: 2px solid #13131823;
+      padding-top: 30px;
+      /* margin-top: 30px; */
+      margin:  30px auto;
+      width: 60%;  
+    }
+
   /* responsive styles */
 @media screen and (max-width:600px) {
     nav{
@@ -334,10 +428,10 @@ main{
     .head-input-fields input{
         margin-bottom: 20px;
     }
-    .popular-tours, .bangladesh-section{
+    .popular-tours, .bangladesh-section, .newsletter-container{
         flex-direction: column;
     }
-    .tours-img img, .mountain-img img{
+    .tours-img img, .mountain-img img, .newsletter-img img{
         width: 100%;
     }
     .destiny-title{
@@ -377,5 +471,9 @@ main{
     }
     .frame-container{
         display: grid;
+      }
+      .discount-tag{
+        position: absolute;
+        left:  13%;
       }
 }
